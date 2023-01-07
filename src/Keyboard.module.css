@@ -1,0 +1,27 @@
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  /* grid-template-rows: auto; */
+  gap: 0.5rem;
+}
+
+.btn {
+  width: 100%;
+  background-color: white;
+  color: var(--rich-black);
+  border: 1px solid white;
+  aspect-ratio: 1 / 1;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn.active {
+}
+
+.btn:hover:not(:disabled),
+.btn:focus:not(:disabled) {
+  background-color: var(--pale-spring-bud);
+}
