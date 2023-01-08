@@ -19,6 +19,10 @@
 }
 
 .btn.active {
+  background-color: var(--blue-sapphire);
+}
+.btn.inactive {
+  opacity: 0.3;
 }
 
 .btn:hover:not(:disabled),

@@ -151,7 +151,13 @@ type HangmanDrawingProps = {
 export function HangmanDrawing({ incorrectGuesses }: HangmanDrawingProps) {
   console.log(`incorrectGuesses: ${incorrectGuesses}`);
   return (
-    <div style={{ position: 'relative', height: '500px', width: '400px' }}>
+    <div
+      style={{
+        position: 'relative',
+        height: '500px',
+        width: '400px',
+      }}
+    >
       {BODY_PARTS.slice(0, incorrectGuesses)}
     </div>
   );
